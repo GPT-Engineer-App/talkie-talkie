@@ -3,7 +3,7 @@ import { Box, VStack, HStack, Text, Avatar, Input, Button, Divider, Heading } fr
 import { FaPaperPlane } from "react-icons/fa";
 
 const ChatMessage = ({ message, sender }) => (
-  <Box bg={sender === "me" ? "blue.500" : "gray.100"} color={sender === "me" ? "white" : "black"} borderRadius="lg" p={2} w="100%" mb={2}>
+  <Box bg={sender === "me" ? "blue.500" : "gray.100"} color={sender === "me" ? "white" : "black"} borderRadius="lg" p={2} alignSelf={sender === "me" ? "flex-end" : "flex-start"}>
     {message}
   </Box>
 );
