@@ -55,7 +55,7 @@ const Index = () => {
 
   return (
     <HStack h="100vh" spacing={0}>
-      <VStack w="30%" borderRightWidth={1}>
+      <VStack h="100%" borderRightWidth={1}>
         <Heading size="md" p={4}>
           Chats
         </Heading>
